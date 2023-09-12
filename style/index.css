@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.861),
+    rgba(0, 0, 0, 0.587)
+  );
+  height: 135vh;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 5px 200px;
+}
+
+#page-title {
+  margin: 10px;
+}
+
+#orientationText {
+  height: 20px;
+  margin: 10px;
+}
+
+#btnJogar,
+#btnSortear {
+  padding: 10px;
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+#btnJogar:hover,
+#btnSortear:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.2s;
+}
+
+#btnJogar:disabled,
+#btnSortear:disabled {
+  cursor: not-allowed;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+#carta-jogador,
+#carta-maquina {
+  width: 360px;
+  height: 470px;
+  overflow: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 10px;
+  border-radius: 33px;
+}
+
+.carta-imagem {
+  border: 1px solid white;
+  height: 100px;
+  margin: 10px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 15px 45px;
+  z-index: 2;
+  text-align: left;
+}
+
+.maquinaCard {
+  margin: 11px 45px;
+}
+
+.carta-status input {
+  margin: 15px 5px;
+}
+
+.resultado-final {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 1rem;
+  border: 2px solid white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carta-subtitle {
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 37px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#cartas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carta-status p {
+  margin-bottom: 2rem;
+}
